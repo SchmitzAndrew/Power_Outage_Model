@@ -36,7 +36,7 @@ We performed the neccessary encoding of the cause.category column. Obviously, th
 
 ### Model Performance
 
-Our current model is very bad since it is very overfit. We need to add more features, perform feature engineering, and optimize our tree depth to improve our model. Our model would average a training R^2 of .70 and testing R^2 of -.10. This model is very overfit and does not generalize well to new data.
+Our current model is very bad since it is very overfit. We need to add more features, perform feature engineering, and optimize our tree depth to improve our model. Our model would average a training R^2 of .70 and testing R^2 of .05. This model is very overfit and does not generalize well to new data.
 
 ## Final Model
 
@@ -79,7 +79,7 @@ Our model is unfair. The R^2 for Group X is higher than the R^2 for Group Y.
 
 For our test-statistic, we chose the difference between R^2 scores of Group X and Y.
 Our alpha or significance level that we are going to be measuring our strength of evidence with is 0.05.
-After running our permutation tests, we get a p-value of 0.31 which is greater than our significance level of 0.05.
+After running our permutation tests, we get a p-value of 0.426 which is greater than our significance level of 0.05.
 
 ### Conclusion
 Based on the evidence from our permutation test, we fail to reject the null because our p_value is higher than our significance level of 0.05. 
