@@ -82,6 +82,7 @@ Our alpha or significance level that we are going to be measuring our strength o
 After running our permutation tests, we get a p-value of 0.322 which is greater than our significance level of 0.05.
 
 <iframe src='assets/perm_test.html' width = 800 height = 600 frameBorder=0></iframe>
+
 ### Conclusion
 Based on the evidence from our permutation test, we fail to reject the null because our p_value is higher than our significance level of 0.05. 
 This evidence suggests that we cannot support the claim that the R^2 for Group X, our "early" months (1-6), 
