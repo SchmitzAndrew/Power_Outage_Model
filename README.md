@@ -59,8 +59,6 @@ Although are training R^2 is lower than our baseline model, our testing R^2 is h
 
 ## Fairness Analysis
 
-### State Choice of Group X and Y
-
 #### Our choice for Group X:
 Power outages that occur in the months 1-6.
 
@@ -69,9 +67,7 @@ Power outages that occur in the months 7-12.
 
 ### Evaluation Metric
 
-We are going to be using the R^2 as our evaluation metric
-
-### Hypotheses
+The evaluation metric that we are going to be using is the R^2.
 
 #### Null Hypothesis:
 Our model is fair. The R^2 for Group X and Group Y are roughly the same, and any differences are due to random chance.
@@ -81,8 +77,11 @@ Our model is unfair. The R^2 for Group X is higher than the R^2 for Group Y.
 
 ### Test Statistic, Signifigance Level, P-Value
 
-Our test-statistic is going to be the difference between R^2 scores of Group X and Y.
+For our test-statistic, we chose the difference between R^2 scores of Group X and Y.
 Our alpha or significance level that we are going to be measuring our strength of evidence with is 0.05.
-After running our permutation tests, we get a p-value of 0.31 which is greater than our significance level of 0.05. We fail to reject 
-the null because our p_value is higher than our significance level of 0.05. This evidence suggests that we cannot support 
-the claim that the R^2 for Group X is higher than the R^2 for Group Y.
+After running our permutation tests, we get a p-value of 0.31 which is greater than our significance level of 0.05.
+
+### Conclusion
+Based on the evidence from our permutation test, we fail to reject the null because our p_value is higher than our significance level of 0.05. 
+This evidence suggests that we cannot support the claim that the R^2 for Group X, our "early" months (1-6), 
+is higher than the R^2 for Group Y, our "later" months (7-12).
